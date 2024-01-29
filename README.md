@@ -1,2 +1,2 @@
-## GreenRivalry: HoyaHacks 2024
-GreenRivalry is a JavaScript web app using D3.js and Chart.js that displays data on the environmental footprint of UVA dorms. The leaderboard creates competition among dorms to conserve more electricity and water.
+## GreenRivalry
+GreenRivalry is a JavaScript web application for UVA's Green Rivalry initiative. Dorms compete to win prizes based on their ecoDebt score, a measure of environmental friendless based on carbon footprint. Current standings and historical data is displayed using d3.js and Chart.js, which are both linked to a static database.
