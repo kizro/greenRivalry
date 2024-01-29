@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorm Data | thegreenchallenge</title>
+    <link rel="stylesheet" href="css/dorms.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js" integrity="sha512-M7nHCiNUOwFt6Us3r8alutZLm9qMt4s9951uo8jqO4UwJ1hziseL6O3ndFyigx6+LREfZqnhHxYjKRJ8ZQ69DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;800&display=swap" rel="stylesheet">
+    <style>
+        .form-select {
+            display: block;
+            width: 100%;
+            padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+            -moz-padding-start: calc(0.75rem - 3px);
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            background-color: #fff;
+            background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e);
+            background-repeat: no-repeat;
+            background-position: right 0.75rem center;
+            background-size: 16px 12px;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><img src="images/logo.png" class="nav-image" style="width: 100px"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li><a href="dorms.html">Dorms</a></li>
+            <li><a href="prizes.html">Prizes</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class = "heading">Environmental Impact Dashboard</h1>
+        <h2 class = "subheading"><b>How it Works </b></h2>
+        <p class = "subtext" style = "line-height: 1.5;">Select a dormitory from the dropdown menu to view its unique energy consumption profile and understand how different utilities contribute to its total carbon footprint. The stacked bar chart will display the proportion of chilled water, heating, electricity usage, and natural graphs that translates into metric tons of CO2 emissions. This visualization aids in identifying key areas for energy-saving improvements and fostering a culture of sustainability within our living spaces. This is also how we calculate eD (ecoDebt) scores each month!</p>
+        <h2 class = "subheading" style="padding-bottom: 0;"><b>Explore the Carbon Footprint of Each Dorm</b></h2>
+    <div style="display: block; max-width:1600px; text-align: center; margin-left: auto; margin-right: auto;padding-left: 10%;padding-right: 10%;">
+        <select id="house-select" class="form-select"></select>
+        <canvas id="chart"></canvas>
+        <script src="js/dorm-data.js"></script>
+        <br><br>
+    </main>
+    </div>
+</body>
+</html>
